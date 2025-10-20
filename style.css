@@ -413,3 +413,51 @@ footer {
   background-color: #145DBF;
   transform: scale(1.05);
 }
+
+/* === EXTRA RESPONSIVE FIX FOR MOBILE === */
+@media (max-width: 768px) {
+  /* Make section padding smaller on mobile */
+  section {
+    padding: 60px 20px;
+  }
+
+  /* Stack image and text vertically in services */
+  .service-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .service-image img {
+    max-width: 90%;
+    border-radius: 10px;
+  }
+
+  .service-info {
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+
+  /* Adjust about section further */
+  .about-container {
+    padding: 20px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+  /* Fix header spacing */
+  header {
+    padding: 2rem 1rem;
+  }
+
+  /* Adjust font size for smaller screens */
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p, li {
+    font-size: 0.95rem;
+  }
+}
